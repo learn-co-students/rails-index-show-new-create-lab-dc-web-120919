@@ -30,7 +30,7 @@ Like many production applications, we've included the `config/secrets.yml` file 
 
 The application you will be building is a Coupon app. Below is a high-level overview of the features you'll be building out:
 
-* You will need to create a `coupons` table with `coupon_code` and `store` columns, which should both be of the `string` data type.
+* DONE!!!! You will need to create a `coupons` table with `coupon_code` and `store` columns, which should both be of the `string` data type.
 
 * Your `index` page should show all of the coupons in the database.
 

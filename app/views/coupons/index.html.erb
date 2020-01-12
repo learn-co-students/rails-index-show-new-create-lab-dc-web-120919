@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Coupon Index</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h1>Welcome to the coupons page!</h1>
+        <ul>
+        <% @coupons.each do |coupon| %>
+
+            <li><%= link_to(coupon.coupon_code, coupon_path(coupon)) %> <%= coupon.store %>
+            </li>
+        <% end %>
+        </ul>
+        <br>
+        <%= link_to("Make a new coupon", new_coupon_path ) %>
+    </body>
+</html>
